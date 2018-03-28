@@ -1,0 +1,359 @@
+/*!
+Theme Name: subshare
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: subshare
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+subshare is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+@media all and (min-width:1100px) {
+.single-title {max-width:50%; margin: 0 auto;}
+}
+._50f7 {
+    text-align: left;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #121619;
+    margin-top: 0;
+}
+ .navbar-nav  li.current-menu-item a {
+    font-weight: bold !important;
+    color: #121619;
+}
+img{max-width:100%;}
+@media (min-width:767px) {
+.fullwidth-cont {padding-top:8%;}
+.wbg{ background:rgba(255,255,255, 0.3); min-height:720px;}
+.staff-slider-section{min-height:720px;background-size:cover!important;}
+.banner-section .banner-h {
+    max-width: 70%;
+    margin: 0 auto;
+   font-weight: 400;
+}
+}
+@media (max-width:767px) {
+    .fullwidth-cont {padding-top:7%; padding:30px 0px;}
+.wbg{ background:rgba(255,255,255, 0.3);}
+.staff-slider-section{background-size:cover!important;}
+    
+    }
+.tpbg {background:rgba(255,255,255, 0.5);}    
+.my-twocol {margin-top:100px;}@media (min-width:1002px) {.page-template-template-naptune .top-menu .navbar-default ul li a{	padding:30px 19px 24px;}
+
+}
+.ripple-feature-section .images_box1 li img {
+   
+    height: 124px !important;
+}
+.ribbonimage {
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 0 30px 0 0;
+}
+.imagesssell{
+    text-align: right;
+}
+.play-section .ribbonimage {
+   
+    padding: 0 0 0 30px;
+}
+.play-section .imagesssell{
+    text-align: left;
+}
+@media (min-width: 1199px){
+
+.sell_content_box, .play_content_box {
+    padding: 130px 100px 130px 0;
+}
+.play_content_box {
+    padding-left: 100px;
+}
+}
+@media (max-width: 600px){
+
+.imagesssell{
+    text-align: center;
+}
+    .ribbonimage {
+  
+    padding: 0;
+}
+.play-section .ribbonimage {
+   
+    padding: 0 0 0 0;
+}
+.play-section .imagesssell{
+    text-align: center;
+}
+}
+.home-slid .carousel-inner .item img {
+    height:150px !important;
+    margin: auto;
+   
+}
+
+.home-slid .carousel-indicators li {   
+    width: 15px;
+    height: 15px;
+    background-color: #999;   
+}
+.home-slid .carousel-indicators .active {
+    width: 18px;
+    height: 18px;
+   
+    background-color: #7feeb3;
+}
+.home-slid {
+    padding: 6% 0 13% 0;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #fff; */
+    background-image: url(http://optimabranding.com/subshare/wp-content/uploads/2018/01/SliderBG.png);
+
+}
+.home-slid .carousel-indicators {
+    top: -50px;
+}
+.home-slid .carousel {
+ 
+    top: 30px;
+}
+.carousel-inner p {
+    color: #000;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.home-slid .carousel-inner p {
+    color: #7f8fa4;   
+}

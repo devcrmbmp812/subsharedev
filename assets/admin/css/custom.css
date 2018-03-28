@@ -1,0 +1,124 @@
+#loadings {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    right: 0;
+    content: "";
+    text-align: center;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.user-btn-area .dropdown.wave-btn .dropdown-menu {
+    padding: 11px;
+    top: 34px !important;
+    right: inherit;
+    left: -123px !important;;
+    border: 1px solid #a9b8c2;
+}
+.avatar-image-p{
+    height: 41px;
+    width: 41px;
+}
+.tokenfield .token{
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    background-color: #ededed;
+    white-space: nowrap;
+    margin: -1px 5px 5px 0;
+    height: 22px;
+    vertical-align: top;
+    cursor: default;
+}
+.tokenfield .token .close {
+    font-family: Arial;
+    display: inline-block;
+    line-height: 100%;
+    font-size: 1.1em;
+    line-height: 1.49em;
+    margin-left: 5px;
+    float: none;
+    height: 100%;
+    vertical-align: top;
+    padding-right: 4px;
+}
+.tokenfield .token .close {
+    margin-top: -10px;
+    display: initial !important;
+    font-size: 12px !important;
+    background: #df9598;
+    color: #fff;
+    opacity: 1;
+    line-height: 3px !important;
+    padding: 1px 5px;
+        padding-right: 5px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto !important;
+    top: -6px;
+    right: -7px;
+    position: relative;
+    height: auto !important;
+    padding-right: 5px !important;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.tokenfield .token-input {
+    background: none;
+    width: 60px;
+    min-width: 60px;
+    border: 0;
+    height: 20px;
+    padding: 0;
+    margin-bottom: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#loading {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: url('../img/ajax_loader_gray_512.gif') no-repeat center center;
+    top: 141px;
+    bottom: 0;
+    left: 228px;
+    right: 0px;
+    text-align: center;
+    /*background-color: #567DA7;*/
+    /*background-size: cover;*/
+}
+.feed-notification img{
+    border-radius: 50%;
+}
+.inner-feed-area ul li img {
+    border-radius: 50%;
+}
+#toogle_mute{
+width: 18px;height: 17px; bottom: 8px; right: 66px; background: transparent url('../../../assets/img/audio.png') 0 0; border: 0px; vertical-align: middle; position: absolute; left: 42%;
+}
