@@ -148,7 +148,8 @@ class SubshareController extends Controller
     public function sub_share()
     {
         $parent_check = DB::table('user_parent_track')->where('user_id',Auth::user()->id)->first();
-        if(count($parent_check))
+       
+        if(!empty ( $parent_check ))
         {
                 //->where('subshare.track_id',$parent_check->track_id)
                 // get recent 4 subshares.
